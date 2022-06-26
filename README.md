@@ -1,3 +1,16 @@
+# Tecnology used
+-JavaScript
+-React Js
+-Redux
+-Node Js
+-Express Js
+-MongoDB
+
+-Mongoose
+-Tailwind
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
