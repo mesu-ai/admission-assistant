@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
@@ -20,7 +21,7 @@ function classNames(...classes) {
 const Header = () => {
     return (
 
-        <Disclosure as="nav" className="bg-regal-blue">
+        <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -116,6 +117,16 @@ const Header = () => {
                                                     >
                                                         Settings
                                                     </a>
+                                                )}
+                                            </Menu.Item>
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <Link
+                                                        to='/register'
+                                                        className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                                    >
+                                                        Sign in
+                                                    </Link>
                                                 )}
                                             </Menu.Item>
                                             <Menu.Item>
