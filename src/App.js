@@ -1,14 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './layouts/header/Header';
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
+      <Header/>
+        <Routes>
+          <Route>
 
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
 
+          </Route>
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
