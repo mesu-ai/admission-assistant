@@ -25,8 +25,11 @@ const UserRegister = () => {
         password:Yup.string().min(6, 'Password at least 6 Charecter').max(10, 'Password not more than 10 Charecter').required('Required')
     });
 
-    const onSubmit = values => {
+    const onSubmit = (values,onSubmitProps) => {
         console.log('values', formik.values);
+        console.log(onSubmitProps);
+        // onSubmitProps.setSubmitting(false);
+        onSubmitProps.resetForm();
     }
 
 
@@ -34,6 +37,7 @@ const UserRegister = () => {
         initialValues,
         validationSchema,
         onSubmit,
+
     });
 
     return (
@@ -84,7 +88,8 @@ const UserRegister = () => {
                         ) : null}
                     </div>
 
-                    <button className='bg-green-600 py-2 px-4 rounded-md text-white' type="submit">Submit</button>
+                    {/* disabled={!formik.isValid || formik.isSubmitting} */}
+                    <button  className='bg-green-600 py-2 px-4 rounded-md text-white' type="submit">Submit</button>
                 </form>
 
 
