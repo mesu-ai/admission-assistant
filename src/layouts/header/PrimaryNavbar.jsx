@@ -23,7 +23,7 @@ const profile = [
 ];
 
 const PrimaryNav = () => {
-	const { i18n, t } = useTranslation();
+	const { t } = useTranslation();
 	const [open, setOpen] = useState(false);
 	const [show, setShow] = useState(false);
 	const profileRef = useRef(null);
