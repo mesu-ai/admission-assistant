@@ -1,13 +1,18 @@
-import React from "react";
 import SignIn from "../pages/SignIn/SignIn";
-import SignUp from "../pages/Signup/Signup";
-import ResetPassword from "../pages/ResetPassword/ResetPassword";
-import NewPassword from "../pages/NewPassword/NewPassword";
-import OneTimePassword from "../pages/Otp/Otp";
-import { useTransition, useState } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
 
-export const routers = [
+
+
+
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const SignUp = lazy(() => import('../pages/Signup/Signup'));
+const ResetPassword = lazy(() => import('../pages/ResetPassword/ResetPassword'));
+const NewPassword = lazy(() => import('../pages/NewPassword/NewPassword'));
+const OneTimePassword = lazy(() => import('../pages/Otp/Otp'));
+
+
+export const routes = [
   {
     path: "/",
     exact: true,
@@ -46,22 +51,17 @@ export const routers = [
 ];
 
 const Routers = () => {
-  const [routerShow, setRouterShow] = useState(false);
-  const [isPending, startTransition] = useTransition();
-
-  startTransition(() => {
-    setRouterShow(true);
-  });
-
   return (
-    <div>
-      {isPending && <p>Loading...</p>}
-      {routerShow && (
-        <BrowserRouter>
-          <Routers>{routers && routers.map((route) => <Route></Route>)}</Routers>
-        </BrowserRouter>
-      )}
-    </div>
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          {routes &&
+            routes.map((route) => (
+              <Route key={route?.name} path={route?.path} element={<route.component />}></Route>
+            ))}
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 };
 

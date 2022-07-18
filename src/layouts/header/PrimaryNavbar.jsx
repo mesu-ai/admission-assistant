@@ -100,11 +100,11 @@ const PrimaryNav = () => {
 								<SearchIcon className="w-5 h-5" />
 							</div>
 
-							<Link to="/sign-in" className="text-gray-300 px-8 py-2 rounded-lg text-sm font-medium">
+							<Link to="/" className="text-gray-300 px-8 py-2 rounded-lg text-sm font-medium">
 								{t('Log in')}
 							</Link>
 							<Link
-								to="/sign-up"
+								to="/signup"
 								className="bg-darkblue text-white px-8 py-3 rounded-lg text-sm font-medium"
 								aria-current="page"
 							>

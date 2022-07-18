@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import { memo, useLayoutEffect, useRef } from 'react';
 import usePrevious from '../../hooks/usePrevious';
 
