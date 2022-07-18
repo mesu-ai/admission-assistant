@@ -41,7 +41,7 @@ const UserRegister = () => {
     });
 
     return (
-        <div className='my-4  flex justify-center  items-center'>
+        <div className='_'>
 
             <div className='w-1/2 bg-slate-300 drop-shadow-lg'>
                 <p className='text-black pt-5 text-3xl font-bold'>Register Page</p>
