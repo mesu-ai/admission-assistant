@@ -1,16 +1,10 @@
 import SignIn from "../pages/SignIn/SignIn";
-
-
-
-
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-const SignUp = lazy(() => import('../pages/Signup/Signup'));
-const ResetPassword = lazy(() => import('../pages/ResetPassword/ResetPassword'));
-const NewPassword = lazy(() => import('../pages/NewPassword/NewPassword'));
-const OneTimePassword = lazy(() => import('../pages/Otp/Otp'));
-
+const SignUp = lazy(() => import("../pages/Signup/Signup"));
+const ResetPassword = lazy(() => import("../pages/ResetPassword/ResetPassword"));
+const NewPassword = lazy(() => import("../pages/NewPassword/NewPassword"));
+const OneTimePassword = lazy(() => import("../pages/Otp/Otp"));
 
 export const routes = [
   {
