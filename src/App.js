@@ -1,16 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import Layout from "./layouts/Layout";
 
 function App() {
-  return (
-    <div className="App">
+  const { i18n } = useTranslation();
 
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem("language"));
+  }, [i18n]);
 
-    </div>
-  );
+  return  <Layout/>
 }
 
 export default App;
