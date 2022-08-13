@@ -9,7 +9,7 @@ const Layout = () => {
     <BrowserRouter>
     <Header/>
     <Suspense fallback={<div>Loading...</div>}>
-      <Routes>
+      <Routes >
         {routes &&
           routes.map((route) => (
             <Route key={route?.name} path={route?.path} element={<route.component />}></Route>

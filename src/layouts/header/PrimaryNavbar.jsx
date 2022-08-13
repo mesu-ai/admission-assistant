@@ -71,7 +71,8 @@ const PrimaryNav = () => {
 
 				<div className="flex items-center justify-center  sm:justify-start">
 					<div className="col-span-1 sm:block hidden">
-						<Logo className="w-14 h-14" />
+						{/* <Logo className="w-14 h-14" /> */}
+						<h3>Logo</h3>
 					</div>
 
 					<div className="hidden sm:block sm:mx-6">
@@ -107,7 +108,7 @@ const PrimaryNav = () => {
 							</Link>
 							<Link
 								to="/signup"
-								className="bg-darkblue text-white px-8 py-3 rounded-lg text-sm font-medium"
+								className="bg-action text-white px-8 py-3 rounded-lg text-sm font-medium"
 								aria-current="page"
 							>
 								{t('Join')}

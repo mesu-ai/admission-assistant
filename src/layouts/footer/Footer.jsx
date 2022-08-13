@@ -69,7 +69,7 @@ const Footer = () => {
 				<div className="container mx-auto px-4 sm:px-0  flex flex-col md:flex-row justify-between py-6 gap-6">
 					<div className="sm:col-span-6 md:col-span-3 col-span-12 lg:col-span-6">
 						<div className="flex flex-col md:flex-row justify-center items-center gap-2">
-							<p className="text-sm text-gray-600">{t('Copyright © 2021 C2C. All rights reserved.')}</p>
+							<p className="text-sm text-gray-600">{t('Copyright © 2021 Admission Assistance. All rights reserved.')}</p>
 							<div className="ltr:ml-2 rtl:mr-2 border border-slate-300 hover:border-slate-400 rounded">
 								<LangChange />
 							</div>

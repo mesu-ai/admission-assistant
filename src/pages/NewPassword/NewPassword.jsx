@@ -70,7 +70,7 @@ const NewPassword = () => {
 							<ErrorMessage className="text-start text-red-600" name="confirm_password" component="div" />
 						</div>
 
-						<button className="w-full bg-darkblue rounded-lg py-3 text-white font-semibold" type="submit">
+						<button className="w-full bg-action rounded-lg py-3 text-white font-semibold" type="submit">
 							{t('Submit')}
 						</button>
 					</Form>

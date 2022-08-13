@@ -44,7 +44,7 @@ const ResetPassword = () => {
 						<div>
 							<button
 								type="submit"
-								className="group relative w-full flex justify-center  py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-darkblue hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 "
+								className="group relative w-full flex justify-center  py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-action hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 "
 							>
 								{t('Submit')}
 							</button>

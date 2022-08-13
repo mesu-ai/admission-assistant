@@ -45,7 +45,7 @@ const Otp = () => {
 							<span className=" text-primary text-sm">{t('Resend in 40 Sec')}</span>
 							<button
 								type="submit"
-								className="w-full mt-2 py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-darkblue hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 "
+								className="w-full mt-2 py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-action hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 "
 							>
 								{t('Submit')}
 							</button>

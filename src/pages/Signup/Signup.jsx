@@ -32,7 +32,7 @@ const SignUp = () => {
 		<div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-md w-full space-y-8 mx-auto md:p-10 p-4 sm:p-5 bg-white  border-mercury border-2 rounded-lg">
 				<div>
-					<h2 className=" text-center text-4xl font-bold text-gray-900">{t('Join')} C2C</h2>
+					<h2 className=" text-center text-4xl font-bold text-gray-900">{t('Join')} Admission Assistance</h2>
 				</div>
 				<Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
 					<Form>
@@ -167,8 +167,8 @@ const SignUp = () => {
 									type="checkbox"
 									className="h-4 w-4 text-gray-600 enabled:hover:border-gray-400 focus:ring-gray-500 border-gray-300 rounded"
 								/>
-								<label className="ltr:ml-2 font-normal  rtl:mr-2 block text-sm text-darkblue">
-									{t('By joining I agree to receive emails from')} C2C
+								<label className="ltr:ml-2 font-normal  rtl:mr-2 block text-sm text-action">
+									{t('By joining I agree to receive emails from')} Admission Assistance
 								</label>
 							</div>
 							<ErrorMessage className="text-sm text-red-600" name="agree" component="div" />
@@ -177,7 +177,7 @@ const SignUp = () => {
 						<div className="text-center">
 							<button
 								type="submit"
-								className="group relative w-full flex justify-center mb-3 py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-darkblue hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 "
+								className="group relative w-full flex justify-center mb-3 py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-action hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 "
 							>
 								{t('Join')}
 							</button>
