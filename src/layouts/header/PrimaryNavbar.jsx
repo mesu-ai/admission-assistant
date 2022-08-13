@@ -8,8 +8,10 @@ import LangChange from '../../components/atoms/LangChange';
 import classNames from '../../utils/classes';
 
 const navigation = [
-	{ name: 'Dashboard', href: '#' },
-	{ name: 'Service Request', href: '#' },
+	{ name: 'Home', href: '#' },
+	{ name: 'Services', href: '#' },
+	{ name: 'Admissions', href: '#' },
+	{ name: 'Events', href: '#' },
 ];
 
 const profile = [
@@ -27,7 +29,7 @@ const PrimaryNav = () => {
 	const [open, setOpen] = useState(false);
 	const [show, setShow] = useState(false);
 	const profileRef = useRef(null);
-	const auth = false;
+	const auth = true;
 
 	// useEffect(() => {
 	// 	document.body.lang = i18n.language;
